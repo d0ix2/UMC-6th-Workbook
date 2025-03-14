@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+  
+#box {
+    width: 600px;
+    height: 600px;
+    margin: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+  
+#title {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 30px;
+    text-align: center;
+}
+  
+form {
+    text-align: center;
+}
+  
+.button {
+    width: 50px;
+    border-radius: 30px;
+    border-color: #000;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#input {
+    width: 80%;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 30px;
+}
+
+#wrapping {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+h4 {
+    text-align: center;
+    margin: 0;
+}
+  
+.list {
+    margin: 0 15px;
+    padding: 0;
+    width: 200px;
+}
+  
+.list_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

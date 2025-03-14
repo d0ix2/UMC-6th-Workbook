@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운터</title>
+    <style>
+        @font-face {
+            font-family: 'Freesentation-9Black';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+            font-weight: 900;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Freesentation-9Black';
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="number">0</h2>
+    <button id="increase">+ 1</button> 
+    <button id="decrease">- 1</button> 
+</body>
+
+<script>
+    const number = document.getElementById("number");
+    const increase = document.getElementById("increase");
+    const decrease = document.getElementById("decrease");
+
+    increase.onclick = function(){
+        const click = parseInt(number.innerText, 10);
+        number.innerText = click + 1;
+        console.log("increase 가 클릭됨");
+    };
+
+    decrease.onclick = function(){
+        const click = parseInt(number.innerText, 10);
+        number.innerText = click - 1;
+        console.log("decrease 가 클릭됨");
+    };
+</script>
+</html>
