@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checklist</title>
+    <style>
+        @font-face {
+            font-family: 'Freesentation-9Black';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+            font-weight: 900;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Freesentation-9Black';
+        }
+        
+        .modal {
+            position: absolute;
+            display: none;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: darkgray;
+            opacity: 70%;
+        }
+
+        .modal_body {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            width: 350px;
+            text-align: left;
+            background-color: white;
+            display: none;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            border-radius: 3px;
+        }
+
+        .close_wrap {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>안녕하세요!</h1>
+    <p>내용내용내용</p>
+    <button class="open">버튼 열기</button> 
+    <div class="modal">
+        <div class="modal_body">
+            <h2>안녕하세요</h2>
+            <p>모달 내용은 " "입니다</p>
+            <div class="close_wrap">
+                <button class="close">닫기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const modal = document.querySelector(".modal");
+    const modal_body = document.querySelector(".modal_body");
+    const btn_open = document.querySelector(".open");
+    const btn_close = document.querySelector(".close");
+
+    btn_open.addEventListener("click", ()=>{
+        modal.style.display = "flex";
+        modal_body.style.display = "block";
+    });
+
+    btn_close.addEventListener("click", ()=>{
+        modal.style.display = "none";
+        modal_body.style.display = "none";
+    });
+</script>
+</html>
